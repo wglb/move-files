@@ -29,7 +29,7 @@
 	(file-namestring newfn-agn)
 	newfn-agn))
 
-(defun move-file-to-destination (ixx newfn) ;;  TODO put in handler case
+(defun move-file-to-destination (ixx newfn)
   "answer 1 for error, 0 otherwise"
   (let ((oldfn (probe-file ixx))
 		(*print-pretty* nil))
