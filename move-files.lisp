@@ -33,7 +33,7 @@
   "answer 1 for error, 0 otherwise"
   (let ((oldfn (probe-file ixx))
 		(*print-pretty* nil))
-	(debugc 5 (xlogntf "mftd: move-file-to-destination ~%     ixx ~s~%   newfn ~s" ixx newfn))
+	 (xlogntf "mftd: move-file-to-destination ~%     ixx ~s~%   newfn ~s~% dir namestring ~s" ixx newfn (directory-namestring newfn))
 	(cond (oldfn
 		   (let* ((newdn (directory-namestring newfn)))
 			 (multiple-value-bind (newps createdp)
